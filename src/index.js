@@ -16,7 +16,7 @@ import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
     errorElement: <ErrorPage />,
   },
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ul class="navbar">
-      <li class ="navbar-item"><a class="nav-link garet-b" href={'/home'}>Home</a></li>
+      <li class ="navbar-item"><a class="nav-link garet-b" href={'/'}>Home</a></li>
       <li class ="navbar-item"><a class="nav-link garet-b" href={'/projects'}>Projects</a></li>
       <li class ="navbar-item"><a class="nav-link garet-b" href={'/contact'}>Contact</a></li>
     </ul>
