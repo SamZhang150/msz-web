@@ -1,0 +1,21 @@
+.garet-h {
+    font-family: GaretHeavy;
+}
+
+.garet-b {
+    font-family: GaretBook;
+}
+
+@font-face {
+    font-family: GaretHeavy;
+    src: url(/src/assets/fonts/Garet-Heavy.ttf);
+}
+
+@font-face {
+    font-family: GaretBook;
+    src: url(/src/assets/fonts/Garet-Book.ttf);
+}
+
+.size-5 {
+    font-size: x-large;
+}

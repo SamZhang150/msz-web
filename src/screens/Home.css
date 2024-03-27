@@ -1,0 +1,29 @@
+.Home {
+    text-align: center;
+    background-color: white;
+    margin-top: 49px;
+    padding-top: 50px;
+}
+
+.nav {
+    align-items: center;
+}
+
+.sw {
+    position: absolute;
+    top: 1200px;    /* this should be equal to swStart */
+    width: 300px;
+}
+
+body {
+    height: 12000px;
+}
+
+.fade {
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
