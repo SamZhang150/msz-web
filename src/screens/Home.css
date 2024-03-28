@@ -11,6 +11,7 @@
 
 .sw {
     position: absolute;
+    left: 50px;
     top: 1200px;    /* this should be equal to swStart */
     width: 300px;
 }

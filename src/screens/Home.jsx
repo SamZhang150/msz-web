@@ -20,26 +20,41 @@ export default function Home() {
   /* element follows page when scrolling, but once
   the page has scrolled down until "scrollEnd" the
   element */
-  function tempFixed(ref, start, mid, end) {
+  function tempFixedScroll(ref, start, mid, end) {
     const scrollStart = start - mid; //when to fix when scrolling
     const scrollEnd = end - mid; //when to unfix when scrolling
 
     if(window.scrollY < scrollStart) {
-      swRef.current.style.position = "absolute";
-      swRef.current.style.top = start + "px";
+      ref.current.style.position = "absolute";
+      ref.current.style.top = start + "px";
     } else
     if(window.scrollY > scrollStart && window.scrollY < scrollEnd) {
-      swRef.current.style.position = "fixed";
-      swRef.current.style.top = mid + "px";
+      ref.current.style.position = "fixed";
+      ref.current.style.top = mid + "px";
     } else {
-      swRef.current.style.position = "absolute";
-      swRef.current.style.top = end + "px";
+      ref.current.style.position = "absolute";
+      ref.current.style.top = end + "px";
     }
-    console.log("scroll position: ", window.scrollY);
+  }
+
+  function rescaleScroll(ref, start, mid, end, scale) {
+    
+    const scrollStart = start - mid; //when to fix when scrolling
+    const scrollEnd = end - mid; //when to unfix when scrolling
+
+    if(window.scrollY < scrollStart) {
+      ref.current.style.width = (start/6) + "px";
+    } else
+    if(window.scrollY > scrollStart && window.scrollY < scrollEnd) {
+      ref.current.style.width = (scale*((window.scrollY-scrollStart)/800)+(start/6)) + "px";
+    } else {
+      ref.current.style.width = (scale+(start/6)) + "px";
+    }
   }
 
   const handleScroll = () => {
-    tempFixed(swRef, swStart, swFixed, swEnd);
+    tempFixedScroll(swRef, swStart, swFixed, swEnd);
+    rescaleScroll(swRef, swStart, swFixed, swEnd, 300)
   };
 
   useEffect(() => {
