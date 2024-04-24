@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import './Projects.css';
-import '../assets/fonts/fonts.css';
+import React, { Component } from "react";
+import "./Projects.css";
+import "../assets/fonts/fonts.css";
 
 export default function Projects() {
   return (

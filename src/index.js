@@ -1,18 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import './assets/fonts/fonts.css';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import "./assets/fonts/fonts.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import ErrorPage from './screens/ErrorPage';
-import Home from './screens/Home';
-import Projects from './screens/Projects';
-import Contact from './screens/Contact';
+import ErrorPage from "./screens/ErrorPage";
+import Home from "./screens/Home";
+import Projects from "./screens/Projects";
+import Contact from "./screens/Contact";
 
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 
 const router = createBrowserRouter([
   {
@@ -33,9 +30,21 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ul class="navbar">
-      <li class ="navbar-item"><a class="nav-link garet-b" href={'/'}>Home</a></li>
-      <li class ="navbar-item"><a class="nav-link garet-b" href={'/projects'}>Projects</a></li>
-      <li class ="navbar-item"><a class="nav-link garet-b" href={'/contact'}>Contact</a></li>
+      <li class="navbar-item">
+        <a class="nav-link garet-b" href={"/"}>
+          Home
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a class="nav-link garet-b" href={"/projects"}>
+          Projects
+        </a>
+      </li>
+      <li class="navbar-item">
+        <a class="nav-link garet-b" href={"/contact"}>
+          Contact
+        </a>
+      </li>
     </ul>
     <RouterProvider class="router" router={router} />
   </React.StrictMode>
