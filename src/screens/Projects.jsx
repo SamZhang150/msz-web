@@ -6,8 +6,8 @@ export default function Projects() {
   return (
     <div class="Projects">
       <body class="fade">
-        <h1 class="garet-h">Projects</h1>
-        <p class="garet-b">This is a paragraph!</p>
+        <h1 class="gen-b">Projects</h1>
+        <p class="gen">This is a paragraph!</p>
       </body>
     </div>
   );

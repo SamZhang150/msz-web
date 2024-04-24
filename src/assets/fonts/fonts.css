@@ -1,21 +1,66 @@
-.garet-h {
-    font-family: GaretHeavy;
+.gen-b {
+  font-family: Genova-Black;
 }
 
-.garet-b {
-    font-family: GaretBook;
+.gen-bi {
+  font-family: Genova-BlackItalic;
+}
+
+.gen {
+  font-family: Genova;
+}
+
+.gen-m {
+  font-family: Genova-Medium;
+}
+
+.gen-mi {
+  font-family: Genova-MediumItalic;
+}
+
+.gen-t {
+  font-family: Genova-Thin;
+}
+
+.gen-ti {
+  font-family: Genova-ThinItalic;
 }
 
 @font-face {
-    font-family: GaretHeavy;
-    src: url(/src/assets/fonts/Garet-Heavy.ttf);
+  font-family: Genova-Black;
+  src: url(/src/assets/fonts/Genova-Black.otf);
 }
 
 @font-face {
-    font-family: GaretBook;
-    src: url(/src/assets/fonts/Garet-Book.ttf);
+  font-family: Genova-BlackItalic;
+  src: url(/src/assets/fonts/Genova-BlackItalic.otf);
+}
+
+@font-face {
+  font-family: Genova;
+  src: url(/src/assets/fonts/Genova.otf);
+}
+
+@font-face {
+  font-family: Genova-Medium;
+  src: url(/src/assets/fonts/Genova-Medium.otf);
+}
+
+@font-face {
+  font-family: Genova-MediumItalic;
+  src: url(/src/assets/fonts/Genova-MediumItalic.otf);
+}
+
+@font-face {
+  font-family: Genova-Thin;
+  src: url(/src/assets/fonts/Genova-Thin.otf);
+}
+
+@font-face {
+  font-family: Genova-ThinItalic;
+  src: url(/src/assets/fonts/Genova-ThinItalic.otf);
 }
 
 .size-5 {
-    font-size: x-large;
+  font-size: x-large;
 }

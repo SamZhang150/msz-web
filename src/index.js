@@ -31,17 +31,17 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ul class="navbar">
       <li class="navbar-item">
-        <a class="nav-link garet-b" href={"/"}>
+        <a class="nav-link gen-m" href={"/"}>
           Home
         </a>
       </li>
       <li class="navbar-item">
-        <a class="nav-link garet-b" href={"/projects"}>
+        <a class="nav-link gen-m" href={"/projects"}>
           Projects
         </a>
       </li>
       <li class="navbar-item">
-        <a class="nav-link garet-b" href={"/contact"}>
+        <a class="nav-link gen-m" href={"/contact"}>
           Contact
         </a>
       </li>

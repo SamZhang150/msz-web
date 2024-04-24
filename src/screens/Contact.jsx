@@ -6,8 +6,8 @@ export default function Contact() {
   return (
     <div class="Contact">
       <body class="fade">
-        <h1 class="garet-h">Contact</h1>
-        <p class="garet-b">This is a paragraph!</p>
+        <h1 class="gen-b">Contact</h1>
+        <p class="gen">This is a paragraph!</p>
       </body>
     </div>
   );

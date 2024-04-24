@@ -32,29 +32,29 @@ export default function Home() {
     <div class="Home">
       <img ref={swRef} class="sw" src={sandwich} alt="awesome sandwich" />
       <body class="fade">
-        <h1 class="garet-h">Home</h1>
-        <p class="garet-b">This is a paragraph!</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
-        <p class="garet-b size-5">filler</p>
+        <h1 class="gen-b">Home</h1>
+        <p class="gen">This is a paragraph!</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
+        <p class="gen size-5">filler</p>
       </body>
     </div>
   );
