@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Home.css";
 import "../assets/fonts/fonts.css";
 import sandwich from "../assets/images/peking-duck-bao.gif";
@@ -8,25 +8,19 @@ export default function Home() {
   //create reference
   const swRef = useRef(null);
 
-  //where the image starts at
-  const [swStart, setSwStart] = useState(1200);
-
-  //where the image will stay when fixed
-  const [swFixed, setSwFixed] = useState(300);
-
-  //where the image will stay after scrolling past
-  const [swEnd, setSwEnd] = useState(2000);
-
-  /* element follows page when scrolling, but once
-  the page has scrolled down until "scrollEnd" the
-  element */
-
-  const handleScroll = () => {
-    tempFixedScroll(swRef, swStart, swFixed, swEnd);
-    rescaleScroll(swRef, swStart, swFixed, swEnd, 300);
-  };
-
   useEffect(() => {
+    //where the image starts at
+    const swStart = 1200;
+
+    //where the image will stay when fixed
+    const swFixed = 300;
+
+    //where the image will stay after scrolling past
+    const swEnd = 2000;
+    const handleScroll = () => {
+      tempFixedScroll(swRef, swStart, swFixed, swEnd);
+      rescaleScroll(swRef, swStart, swFixed, swEnd, 300);
+    };
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {

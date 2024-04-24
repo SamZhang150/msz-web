@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Projects.css";
 import "../assets/fonts/fonts.css";
 

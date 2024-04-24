@@ -1,4 +1,10 @@
+/* These functions deal with dynamic styling based on scrolling */
+
 export function tempFixedScroll(ref, start, mid, end) {
+  /* element follows page when scrolling, but once
+  the page has scrolled down until "scrollEnd" the
+  element */
+
   const scrollStart = start - mid; //when to fix when scrolling
   const scrollEnd = end - mid; //when to unfix when scrolling
 
